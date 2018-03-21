@@ -12,6 +12,7 @@ npm install
 npm run dev
 
 # build for production with minification
+wocao
 npm run build
 ```
 
