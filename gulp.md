@@ -44,7 +44,14 @@ function replaceHostName\(folderPath, hostName\) {
 
 }
 
-\`\`\`
+```
+import * as gulpReplace from 'gulp-replace';
+gulp.task('replace-hostname-dev', function (cb) {
+   return gulp.src('dist/static/*.js')
+    .pipe(gulpReplace(/---hostName---/g,'//api.typhoon-frontend.cxm'))
+    .pipe(gulp.dest('dist/static'))
+});
+```
 
 
 
